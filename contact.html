@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Funcra Tech</title>
     <meta name="description" content="Get in touch with Funcra Tech for app development services and support.">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="referrer" content="no-referrer">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -103,6 +111,12 @@
                             <div class="form-group">
                                 <label for="message">Message *</label>
                                 <textarea id="message" name="message" required placeholder="Please describe your inquiry or project details..."></textarea>
+                            </div>
+                            
+                            <!-- Honeypot field - hidden from users but visible to bots -->
+                            <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+                                <label for="website">Website (leave blank):</label>
+                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
                             </div>
                             
                             <button type="submit" class="submit-btn">Send Message</button>

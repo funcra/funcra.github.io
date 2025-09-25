@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Block all search engines from indexing this site
+# This site is for business purposes only and should not appear in search results
