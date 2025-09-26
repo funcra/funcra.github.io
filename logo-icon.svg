@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="#2563eb" stroke="#1d4ed8" stroke-width="2"/>
+  
+  <!-- Mobile device outline -->
+  <rect x="15" y="8" width="30" height="44" rx="4" ry="4" fill="none" stroke="white" stroke-width="2.5"/>
+  
+  <!-- Screen -->
+  <rect x="18" y="12" width="24" height="32" rx="1" ry="1" fill="white" opacity="0.95"/>
+  
+  <!-- App icons grid -->
+  <g fill="white" opacity="0.9">
+    <!-- Top row -->
+    <circle cx="22" cy="18" r="2" fill="#2563eb"/>
+    <circle cx="28" cy="18" r="2" fill="#10b981"/>
+    <circle cx="34" cy="18" r="2" fill="#f59e0b"/>
+    
+    <!-- Middle row -->
+    <circle cx="22" cy="24" r="2" fill="#ef4444"/>
+    <circle cx="28" cy="24" r="2" fill="#8b5cf6"/>
+    <circle cx="34" cy="24" r="2" fill="#06b6d4"/>
+    
+    <!-- Bottom row -->
+    <circle cx="22" cy="30" r="2" fill="#84cc16"/>
+    <circle cx="28" cy="30" r="2" fill="#f97316"/>
+    <circle cx="34" cy="30" r="2" fill="#ec4899"/>
+  </g>
+  
+  <!-- Screen content lines -->
+  <g stroke="#2563eb" stroke-width="1" opacity="0.6">
+    <line x1="20" y1="34" x2="40" y2="34"/>
+    <line x1="20" y1="36" x2="35" y2="36"/>
+    <line x1="20" y1="38" x2="38" y2="38"/>
+  </g>
+  
+  <!-- Home button -->
+  <circle cx="30" cy="50" r="2.5" fill="white" opacity="0.9"/>
+</svg>
