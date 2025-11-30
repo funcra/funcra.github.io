@@ -59,109 +59,42 @@
 
         <section class="content-section">
             <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>Get In Touch</h2>
-                        <p>We'd love to hear from you. Whether you have questions about our services, need technical support, or want to discuss a potential project, we're here to help.</p>
-                        
-                        <div class="contact-methods">
-                            <div class="contact-method">
-                                <div class="contact-icon">📧</div>
-                                <h3>Email Us</h3>
-                                <p><a href="mailto:query@funcra.app">query@funcra.app</a></p>
-                                <p>We typically respond within 24 hours</p>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="contact-icon">🌐</div>
-                                <h3>Visit Our Website</h3>
-                                <p><a href="https://funcra.app">funcra.app</a></p>
-                                <p>Learn more about our services</p>
-                            </div>
-                            
-                            <div class="contact-method">
-                                <div class="contact-icon">💼</div>
-                                <h3>Business Inquiries</h3>
-                                <p>Partnership opportunities</p>
-                                <p>Custom development projects</p>
-                            </div>
+                <div class="contact-form-container" style="max-width: 600px; margin: 0 auto;">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xjkejvzy" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                    </div>
-                    
-                    <div class="contact-form-container">
-                        <h2>Send Us a Message</h2>
-                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xjkejvzy" method="POST">
-                            <div class="form-group">
-                                <label for="name">Name *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <!-- Formspree隐藏字段 -->
-                            <input type="hidden" name="_subject" value="New Contact Form Submission from Funcra Website">
-                            <input type="hidden" name="_replyto" value="">
-                            <input type="hidden" name="_next" value="https://funcra.app/contact.html?success=true">
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" required placeholder="Please describe your inquiry or project details..."></textarea>
-                            </div>
-                            
-                            <!-- Honeypot field - hidden from users but visible to bots -->
-                            <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
-                                <label for="website">Website (leave blank):</label>
-                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-                            </div>
-                            
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <div class="container">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>What types of apps do you develop?</h3>
-                        <p>We specialize in utility applications and web services for mobile platforms. This includes productivity tools, workflow automation apps, and web-based services that enhance user productivity.</p>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3>Do you offer custom development?</h3>
-                        <p>Yes, we provide custom app development services tailored to your specific business needs. Contact us to discuss your project requirements and timeline.</p>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3>What platforms do you support?</h3>
-                        <p>We develop applications for iOS (App Store), Android (Google Play), and Amazon AppStore. We also create web-based services and APIs.</p>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3>How long does development take?</h3>
-                        <p>Development timelines vary based on project complexity. Simple utility apps may take 4-8 weeks, while complex applications can take 3-6 months. We provide detailed timelines during project planning.</p>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3>Do you provide ongoing support?</h3>
-                        <p>Yes, we offer maintenance and support services for all applications we develop. This includes bug fixes, updates, and feature enhancements.</p>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h3>What are your payment terms?</h3>
-                        <p>We accept payments through secure payment processors and offer flexible payment terms. For custom projects, we typically require a deposit with milestone-based payments.</p>
-                    </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <!-- Formspree隐藏字段 -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from Funcra Website">
+                        <input type="hidden" name="_replyto" value="">
+                        <input type="hidden" name="_next" value="https://funcra.app/contact.html?success=true">
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Please describe your inquiry or project details..."></textarea>
+                        </div>
+                        
+                        <!-- Honeypot field - hidden from users but visible to bots -->
+                        <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+                            <label for="website">Website (leave blank):</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -184,7 +117,7 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: <a href="mailto:query@funcra.app">query@funcra.app</a></p>
+                    <p>Please use the contact form to reach us</p>
                     <p>Website: <a href="https://funcra.app">funcra.app</a></p>
                     <p>Location: Japan</p>
                 </div>
